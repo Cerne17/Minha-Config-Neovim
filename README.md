@@ -2,7 +2,7 @@
 
 ## 1. Instalar o Neovim:
 Para instalar o Neovim, siga os passos no site a seguir:
-[https://neovim.io/)
+https://neovim.io/
 
 ## 2. Instalar o Packer (Gerenciador dos Plugins):
 
@@ -17,7 +17,7 @@ Para instalar o Neovim, siga os passos no site a seguir:
 
 ## 3. Inicializar o nvim:
     
-    Ao inicializar o neovim, deve-se executar o código `:PackerSync` para sincronizar todas instalações de Plugins
+Ao inicializar o neovim, deve-se executar o código `:PackerSync` para sincronizar todas instalações de Plugins
 
 ## 4. Reiniciar o nvim:
     
