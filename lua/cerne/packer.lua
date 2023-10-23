@@ -45,7 +45,10 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+  use {
+      'stevearc/oil.nvim',
+      config = function() require('oil').setup() end
+  }
+
   use ('github/copilot.vim')
 end)
-
-
