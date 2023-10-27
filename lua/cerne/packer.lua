@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+
   use {
 	  "catppuccin/nvim", 
 	  as = "catppuccin",
@@ -24,8 +25,11 @@ return require('packer').startup(function(use)
   -- Use treesitter playground in case of wanting to build a 
   -- neovim plugin
   -- use('nvim-treesitter/playground')
+
   use('ThePrimeagen/harpoon')
+
   use('mbbill/undotree')
+  
   use('tpope/vim-fugitive')
 
   -- LSP
@@ -45,10 +49,18 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+
   use {
       'stevearc/oil.nvim',
       config = function() require('oil').setup() end
   }
 
   use ('github/copilot.vim')
+
+  use ('windwp/windline.nvim')
+
+  -- TODO: Learn about: https://github.com/rest-nvim/rest.nvim
+  -- TODO: Learn about: https://github.com/norcalli/snippets.nvim
+
+
 end)

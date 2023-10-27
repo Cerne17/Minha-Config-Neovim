@@ -160,6 +160,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\MIGUEL\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["windline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\MIGUEL\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\windline.nvim",
+    url = "https://github.com/windwp/windline.nvim"
   }
 }
 
