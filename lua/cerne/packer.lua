@@ -62,5 +62,18 @@ return require('packer').startup(function(use)
   -- TODO: Learn about: https://github.com/rest-nvim/rest.nvim
   -- TODO: Learn about: https://github.com/norcalli/snippets.nvim
 
+  use ('ThePrimeagen/vim-be-good')
+
+  use({
+      "nvim-treesitter/nvim-treesitter-textobjects",
+      after = "nvim-treesitter",
+      requires = "nvim-treesitter/nvim-treesitter",
+  }) -- TODO: Configure this plugin (https://www.youtube.com/watch?v=FuYQ7M73bC0) 
+  -- (https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
+
+use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
 
 end)
