@@ -76,4 +76,13 @@ use {
     config = function() require("nvim-autopairs").setup {} end
 }
 
+use {
+    'prettier/vim-prettier',
+    config = function()
+        vim.cmd([[autocmd FileType javascript,typescript,json,css,scss,yaml,lua,html,markdown,graphql,jsx,vue,vim setl formatprg=prettier\ --stdin]])
+    end,
+    run = 'yarn install --frozen-lockfile --production',
+    branch = 'release/0.x'
+}
+
 end)
