@@ -84,6 +84,7 @@ return require('packer').startup(function(use)
         run = 'yarn install --frozen-lockfile --production',
         branch = 'release/0.x'
     }
+
     use {
         'preservim/nerdtree'
     }
@@ -93,5 +94,9 @@ return require('packer').startup(function(use)
         config = function()
             require('Comment').setup()
         end
+    }
+
+    use {
+      'rust-lang/rust.vim',
     }
 end)
