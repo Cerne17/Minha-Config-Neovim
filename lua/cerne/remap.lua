@@ -49,8 +49,11 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+-- Quick saving
+vim.keymap.set("n", "<leader><leader><leader>", function()
+  vim.cmd("wall")
+end)
 -- Space + Space = :so
 --vim.keymap.set("n", "<leader><leader>", function()
 --     vim.cmd("so")
 -- end)
-
